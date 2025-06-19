@@ -18,6 +18,7 @@ public class BubbleSort
     }
     public void BubbleSortNaive()
     {
+        System.out.println("Naive algo");
         for(int i=0;i<arr.length-1;i++)
         {
             for(int j=0;j<arr.length-1;j++)
@@ -29,16 +30,18 @@ public class BubbleSort
                 }
             }
         }
-        for (int j : arr) {
+        for (int j : arr)
+        {
             System.out.print("|"+j);
         }
         System.out.println("\n"+BubbleSortNaivecount);
     }
     public void BubbleSortNaiveImproved()
     {
+        System.out.println("Naive algo improved");
         for(int i=0;i<arr.length-1;i++)
         {
-            for(int j=1;j<arr.length-1-i;j++)
+            for(int j=0;j<arr.length-i-1;j++)
             {
                 BubbleSortNaiveImcount++;
                 if(arr[j]>arr[j+1])
@@ -54,10 +57,11 @@ public class BubbleSort
     }
     public void BubbleSortOptimum()
     {
+        System.out.println("Optimum algo");
         for(int i=0;i< arr.length-1;i++)
         {
             boolean flag=true;
-            for(int j=0;j<arr.length-i-1;i++)
+            for(int j=0;j<arr.length-i-1;j++)
             {
                 BubbleSortOptimumCount++;
                 if(arr[j]>arr[j+1])
@@ -70,6 +74,10 @@ public class BubbleSort
             {
                 break;
             }
+        }
+        for(int k:arr)
+        {
+            System.out.print("|"+k);
         }
         System.out.println("\n"+BubbleSortOptimumCount);
     }
