@@ -1,0 +1,5 @@
+See, the approach in the divide and conquer is that you need to pass the values right but in java there is no refrence passing.
+so what you do? you copy the attributes of the object into the parent object. think of the object that you create at every instance as a node.
+each and every node is going to have its own elements and the values of these elements is what will be copied. 
+You need to divide the code into two parts. that is one small one where the length =1 or 2 and the other, the bigger one where the value is greater than
+2. You define the mid element and then you go for recursive call at the mid.

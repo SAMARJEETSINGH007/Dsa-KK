@@ -1,5 +1,5 @@
-import java.util.Scanner;
 package NonComparisonBasedSorting;
+import java.util.Scanner;
 public class RadixSort
 {
 	static 	int [] arr;
